@@ -49,8 +49,9 @@
           if (x < 2) {
             return [];
           }
-          const primes = _.range(2, x);
+          const primes = _.range(x);
           const x_sqrt = Math.sqrt(x);
+          primes[1] = 0;
           for (let i = 0; i < x_sqrt; i++) {
             const prime = primes[i]
             if (!prime) {
